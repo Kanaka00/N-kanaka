@@ -1,0 +1,186 @@
+.resumePage{
+    padding: 20px 20%;
+}
+.resume-box{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+   border-radius: 20px;
+    flex-direction: column;
+}
+.location{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.location p{
+    font-size: 14px;
+    color: #fffcfc;
+    font-weight: 400;
+}
+.location i{
+    margin: 2px 5px 0px 0px;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    background-color: rgb(144, 144, 226);
+    width: 100%;
+    padding: 40px 0px 40px 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.info-box h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
+/* profile box */
+
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 40px 13px 40px 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.profile h2{
+    font-weight: 600;
+}.profile p{
+    font-weight: 400;
+}
+
+/* resumeProject */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0px 13px 40px 25px;
+}
+.resume-project{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.resume-project h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.comp{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.comp p{
+    background-color: aqua;
+    font-weight: 300;
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.points {
+    padding: 10px;
+}
+
+.points ul {
+    padding-left: 20px;
+}
+
+.points li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.resume-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 13px 40px 25px;
+}
+.skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills-box div{
+    width: 250px;
+    padding: 10px 0px 0px 0px;
+
+}
+.skills-box h4{
+    font-weight: 600;
+    font-size: 15px;
+}
+.com-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.com-box p{
+    background-color: aqua;
+    font-weight: 300;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* links */
+
+.links{
+    display: flex;
+    gap: 20px;
+    padding: 0px 13px 40px 25px;
+    flex-direction: column;
+}
+.links h2{
+    font-weight: 600;
+}
+.link-box ul{
+    display: flex;
+    gap: 20px;
+}
+.link-box ul li{
+    list-style: none;
+}
+
+.links a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #0c0c0c;
+    font-size: 25px;
+}
+.links a:hover{
+    color: rgba(0, 0, 0, 0.637);
+    transition: 0.3s;
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    .resumePage{
+        padding: 20px 0%;
+    }
+
+    .location{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+}

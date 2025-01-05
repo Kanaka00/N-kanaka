@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+.home-page{
+  padding: 20px 10%;
+  display: flex;
+  height: 90vh;
+}
+.name-info-box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name-info-box h1{
+    font-size: 3rem;
+}
+.name-info-box h1 span{
+    color: gray;
+    animation: colorChange 4s infinite;
+}
+.pics{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userInfo{
+    width: 450px;
+    margin: 20px 0px;
+}
+.home-page ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.home-page ul li a{
+    text-decoration: none;
+    color: black;
+}
+.home-page ul li a:hover{
+    color: #f1356d;
+}
+.home-page ul{
+    display: flex;
+    gap: 40px;
+}
+.userInfo{
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+}
+
+.pics{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pics img{
+    height: 100vh;
+}
+.rotate{
+    height: 350px;
+    width: 350px;
+    border-top: 10px solid rgb(1, 26, 7);
+    border-right: 10px solid rgb(1, 36, 10);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -999;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes colorChange {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: yellow;
+    }
+    75% {
+      color: pink; /* Close to rose color */
+    }
+    100% {
+      color: red;
+    }
+  }
+@media (max-width: 768px){
+
+  .name-info-box h1{
+    font-size: 1.5rem;
+}
+.box1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+    .name-info-box{
+
+        margin: 10% 0px;
+        
+    }
+
+    .home-page{
+           
+            align-items: center;
+            flex-direction: column;
+      }
+      .pics{
+        height: 30vh;
+       margin-bottom: 30%;
+    }
+    .pics img{
+        height: 90vh;
+    }
+}

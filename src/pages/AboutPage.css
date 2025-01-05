@@ -1,0 +1,163 @@
+.Aboutpage {
+    padding: 20px 10%;
+}
+
+.title-part {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.title-part i {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: rgb(110, 130, 243);
+}
+
+.title-part h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.info .imgBox img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.info .description {
+    width: 50%;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* education */
+
+.journey {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.educationCard {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0px;
+    background-color: rgb(248, 248, 248);
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.educationCard .imgBox {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.educationCard .edu-info {
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.edu-info p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #4a5568;
+}
+.edu-info h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(9, 149, 196);
+}
+.edu-info h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #4a5568;
+}
+.educationCard:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+/* what drives me */
+
+
+.journey{
+    margin: 7% 0px;
+}
+
+.motivation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.goal{
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #c1d8f7b2;
+    background-color: rgb(248, 245, 245);
+}
+.goal .icon{
+    font-size: 3rem;
+    color: #4a5568;
+    position: relative;
+
+}
+
+
+@media (max-width: 768px) {
+    .title-part i {
+        width: 70px;
+    }
+
+    .title-part h1 {
+        font-size: 2.5rem;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info .imgBox img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .info .description {
+        width: 100%;
+    }
+}

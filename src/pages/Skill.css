@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 16px; /* Space between cards */
+    justify-content: space-around;
+    padding:50px 0px ;
+    background-color: rgb(240, 246, 252);
+}
+
+/* Skill Card Styling */.skillcard{
+        background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 8% 5%;
+    width: 80%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.skillcard p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+.IconBox{
+   background-color: aqua;
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+
+   
+}
+
+
+/* Project Card Styling */
+
+
+.projectCard{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  gap:20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+}
+.projectCard p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+.imgBox img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.buttons{
+  display: flex;
+  gap: 30px;
+}
+.buttons button{
+  padding: 15px 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(48, 48, 250);
+  cursor: pointer;
+}
+.visit button{
+  background-color: transparent;
+}
+.buttons button:hover{
+  background-color: rgb(40, 40, 160);
+  transition: 0.3s;
+  color: white;
+}
+.visit button:hover{
+  background-color: rgba(44, 35, 35, 0.836);
+}
+
+@media (max-width: 768px) {
+  .skillcard{
+    align-items: center;
+    gap: 40px;
+  }
+  .projectCard{
+    align-items: center;
+    gap: 40px;
+}
+  .buttons{
+    flex-direction: column;
+  }
+.buttons button{
+  padding: 15px 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+   .container {
+      flex-direction: column;
+      align-items: center;
+  }
+}

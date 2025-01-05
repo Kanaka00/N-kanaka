@@ -1,0 +1,211 @@
+
+.BgHome {
+    width: 100%;
+    background-color: rgb(18, 18, 19);
+    display: flex;
+    height: 85vh;
+    flex-direction: row; /* Default layout (row for larger screens) */
+}
+
+/* Box 1 (left section with text) */
+.box1 {
+    background-color: white;
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 20px;
+}
+
+.box1 .greetings {
+    font-weight: 400;
+    font-size: 1.5rem; /* Adjusted for better readability */
+}
+
+.userInfo {
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 400px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.userName {
+    color: rgb(2, 63, 2);
+}
+
+.box1 h1 {
+    font-size: 5rem;
+    margin: 20px 0; /* Added margin to space out title */
+}
+
+/* Box 2 (right section with image) */
+.box2 {
+    background-image: url("/public/Pics/Retro.jpeg");
+    width: 25%;
+    background-size: cover; /* Ensure background image is covered */
+    background-position: center;
+}
+
+/* Background image container */
+.bgImg {
+    background-image: url('/public/Pics/zoro.png');
+    background-repeat: no-repeat;
+    background-position: -50px 10vh;
+    right: 0;
+    margin-right: -12%;
+    position: absolute;
+    width: 50%;
+    height: 85vh;
+    background-size: cover;
+    object-fit: cover;
+}
+
+/* Icons section */
+.box1 .icon ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 30px; /* Added margin for spacing */
+}
+
+.icon {
+    display: flex;
+    justify-content: center; /* Center align the icons */
+    margin-top: 20px; /* Adjust spacing as needed */
+    overflow: hidden;
+}
+
+.icon ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.icon li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between icons */
+}
+
+.icon a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Specific hover colors for each icon */
+.icon a:hover .fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+
+.icon a:hover .fa-github {
+    color: #333; /* GitHub black */
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+
+.icon a:hover .fa-linkedin {
+    color: #0077B5; /* LinkedIn blue */
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+
+.icon a:hover .fa-twitter {
+    color: #2b5168; /* Twitter blue */
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+
+/* Responsive Design */
+
+/* For small devices like mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .BgHome {
+        flex-direction: column; /* Stack boxes vertically on small screens */
+        height: auto;
+    }
+
+    .box1 {
+        width: 100%; /* Full width on mobile */
+        padding-left: 5%; /* Adjust padding */
+        padding-top: 10px;
+        text-align: center; /* Center text */
+    }
+
+    .box1 h1 {
+        font-size: 3rem; /* Reduce font size for better readability */
+    }
+
+    .userInfo {
+        width: 80%; /* Increase the width of the user info box */
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .bgImg {
+        display: none; /* Hide background image on mobile */
+    }
+
+    .box2 {
+        display: none; /* Hide second image box on mobile */
+    }
+
+    /* Stack icons vertically */
+    .icon ul {
+        display: flex;
+        justify-content: space-between; /* Center the icons */
+        align-items: center; /* Center the icons horizontally */
+    }
+
+    .icon li {
+        margin: 30px; /* Space out icons */
+    }
+
+    /* Reduce icon size for mobile screens */
+    .icon a {
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
+    /* Reduce the gap between the greeting text and name */
+    .box1 .greetings {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* For tablets (portrait and below) (max-width: 1024px and min-width: 769px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .BgHome {
+        flex-direction: column; /* Stack boxes vertically on tablets */
+    }
+
+    .box1 {
+        width: 100%; /* Full width on tablet */
+        padding-left: 10%; /* Adjust padding */
+    }
+
+    .box1 h1 {
+        font-size: 4rem; /* Adjust font size for tablets */
+    }
+
+    .userInfo {
+        width: 80%; /* Increase width on tablets */
+        padding: 20px;
+    }
+
+    .bgImg {
+        width: 60%; /* Adjust background size */
+    }
+
+    .icon ul {
+        flex-direction: row; /* Keep icons in a row on tablets */
+    }
+
+    .icon li {
+        margin: 0 10px; /* Space out icons */
+    }
+}
